@@ -1,0 +1,80 @@
+package ch02;
+
+public class Hello4 {
+        public static int divide(int n, int m) {
+        return n / m; 
+    }
+
+    public static float div_float(int n, int m) {
+        return (float)n / m; // 정수를 입력 받아서, 계산시 이것도 정수로 계산이 되니깐
+    }
+
+    public static void main(String[] args) {
+        int result4 = divide(2, 2);
+        System.out.println("divide 라는 함수 이용해서 결과 출력 : " + result4);
+        
+        float result5 = div_float(1, 3); // 반환값의 타입이 : float이니까, 받을 변수의 타입도 일치
+        System.out.println("div_float 라는 함수 이용해서 결과 출력 : " + result5);
+    
+    
+
+    int s; // 변수를 정의만 했고, 실제  할당은 안한 상태
+    char a; // 데이터 타입 char, 한 문자만을 의미함.
+    s = 100;
+    a = 'd';
+    System.out.println("정수 표현 : " + s);
+    System.out.println("문자 표현 : " + a);
+    
+    
+    // 타입, 스캐너 입력 방법들 설명 하면서,
+    
+    // 퀴즈4 - 과제
+    // 본인의 이름과, 전화번호, 이메일을 입력 받는 매개변수가 3개이고,
+    // 출력값은 문자열 타입인데 : 결과는
+    // 저는 {이름} 입니다.
+    // 제 전화번호 : {전화번호}이고,
+    // 이메일 : {이메일} 입니다.
+    // 출력하는 예제 해보기.
+    
+    int n;
+    char t;
+    char b;
+    n = 34456223;
+    t = "정찬우";
+    b = "jcw6223@naver.com";
+
+    System.out.println("저는 : " + t);
+    System.out.println("제 전화번호 : " + n);
+    System.out.println("이메일 : " + b);
+        
+    
+    
+
+    }
+}
+
+// 퀴즈3 
+// 정적 메소드 하나 만들어서, 나누기 기능으로 사용하기,
+// result4 에 담아서, 
+
+// 퀴즈를 푸는 도중에, 정수로만 데이터 타입을 처리하고 있는데, 
+// 소수로 -> 실수로 표현은 어떻게 할까?
+// 데이터 타입에 대해서 
+// 기본형, 참조형
+// byte, int, short, float, long, double, char, boolean
+// 참조형 : 기본형을 제외한 나머지 모두를 가리킨다.
+// 객체(Object), 배열(Array), 문자열(String) 등
+
+// 결론, 
+// 1. 클래스 영역과, 메인 함수 영역 구분
+// 2. 메인 함수로 시작, 끝으로 한다.
+// 3. 메인 함수도 알고 보니, 정적인 함수(메소드)
+// 4. 클래스명, 파일명(.java) 동일해야 한다.
+// 5. 변수에서, 기본형, 참조형이 있는데, 현재는 2개, int, string 타입 이야기 했고,
+// 6. 문자열을 표기시에, 큰 따옴표로 표기해서 사용한다.
+// 7. 정적 메소드(함수)를 정의하고,
+// 8. 정적 메소드를 사용(호출), 사용시, 정의한 메소드로 가서, 액션을 하고 돌아와서 재사용.
+// 9. 클래스 명, 대문자로 시작하고, 패키지 명과, 메소드(함수)명은 소문자로 시작하고
+// 10. 이름 작명시, 사용 가능한 특수 문자는 $, _, 달러기호와 언더바만 사용 가능.
+
+
