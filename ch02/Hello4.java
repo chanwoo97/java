@@ -36,20 +36,18 @@ public class Hello4 {
     // 이메일 : {이메일} 입니다.
     // 출력하는 예제 해보기.
     
-    int n;
-    char t;
-    char b;
-    n = 34456223;
-    t = "정찬우";
-    b = "jcw6223@naver.com";
-
-    System.out.println("저는 : " + t);
-    System.out.println("제 전화번호 : " + n);
-    System.out.println("이메일 : " + b);
+        String p;
+        String n;
+        String e;
+    
+        p = "01034456223";
+        n = "정찬우";
+        e = "jcw6223@naver.com";
         
-    
-    
-
+        System.out.println("저는 : " + n + "입니다.");
+        System.out.println("제 전화번호 : " + p + "이고,");
+        System.out.println("이메일 : " + e + "입니다.");
+        
     }
 }
 
@@ -61,7 +59,8 @@ public class Hello4 {
 // 소수로 -> 실수로 표현은 어떻게 할까?
 // 데이터 타입에 대해서 
 // 기본형, 참조형
-// byte, int, short, float, long, double, char, boolean
+// byte, int(정수, 기본값, 4바이트), short, float(실수, 4바이트), long(정수, 8바이트), 
+// double(실수, 8바이트), char, boolean
 // 참조형 : 기본형을 제외한 나머지 모두를 가리킨다.
 // 객체(Object), 배열(Array), 문자열(String) 등
 

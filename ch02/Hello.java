@@ -45,8 +45,6 @@ public static int sum (int n, int m) {
 // 정적 메소드 하나 만들어서, 더하기 기능으로 사용하기
 // result 에 담아서, 출력해보기
 
-
-
 // 영역
 
 // public class Hello {
@@ -66,4 +64,4 @@ public static int sum (int n, int m) {
 // } 
 
 // 클래스 영역 안1 = 영역1- 영역 끝부분
-// }
+// 
