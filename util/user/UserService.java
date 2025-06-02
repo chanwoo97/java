@@ -1,6 +1,8 @@
-package util;
+package util.user;
 
 import java.util.Scanner;
+
+import util.date.DateUtil;
 
 public class UserService {
     // 회원 가입 기능, 정적 메소드 생성.

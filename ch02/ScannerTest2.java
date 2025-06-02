@@ -2,8 +2,8 @@ package ch02;
 
 import java.util.Scanner;
 
-import util.UserService;
-import util.UserService1;
+import util.user.UserService;
+import util.user.UserService1;
 
 public class ScannerTest2 {
     public static void main(String[] args) {
