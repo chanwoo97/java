@@ -27,4 +27,20 @@ public class Phone {
         System.out.println("제조사 : " + this.company);
         System.out.println("-------------------------");
     }
+
+    // 생성자 오버로딩
+     public Phone(String model) {
+        this.model = model;
+        this.price = "0만원";
+        this.company = "제조사";
+    }
+
+    public Phone(String model, String price) {
+        this.model = model;
+        this.price = price;
+        this.company = "제조사";
+    }
+
+    
+
 }

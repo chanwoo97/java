@@ -3,12 +3,43 @@ package ch03;
 import java.util.Scanner;
 
 public class Exs_ch3 {
-    // int[] : 리턴 타입 정수를 요소로 가지는 배열 타입.
-    // ex3_8_return : 메서드 이름 .
-    public static int[] ex3_8_return() {
-        // 배열을 리턴하는 예시
-        int[] numbers = { 1, 2, 3, 4, 5 }; // 배열 선언과 동시에 값 할당
-        return numbers; // 배열 리턴
+
+    // 기본 예외 처리 방법,
+    // 왜? 예외 처리를 해야하나요? 비정상적인 종료를 막기 위해서, UX 향상,
+    // 예시) 회원 가입 하는 경우, 제가 잘못해서 입력을 특수 문자등을 입력한 경우,
+    // 물론, 기본적으로 특수 문자 유효성 체크가 당연히 들어가거나, 다른 조취가 있지만, 일단 없다는 가정
+    // 회원 가입 처리 하는 중간에, 비정상적인 실행이 되면, 전체 웹, 또는 프로그램이 종료가 되버림.
+    // 만약, 예외 처리를 해두면, 안전하게, 간단히 경고창으로, 입력에 특수 문자가 있으니 확인 후,
+    // 다시 입력해 주세요. 안전하게 사용자에게 안내 해줌.
+
+    // try {
+    // 1) 예외가 발생할수 있는 코드 블록 : 실험장 -> catch 구문으로 예외를 던진다고 표현함.
+    // } catch (예외타입 e) {
+    // 2) 예외가 발생했을 때 처리하는 코드 블록 : 예외 처리
+    // }
+    // finally {
+    // 3) 예외 발생 여부와 상관없이 항상 실행되는 코드 블록 : 자원 반납, 파일 닫기 등
+    // }
+
+    // 0으로 나누는 예외 처리 예시
+    public static void ex3_9_exception() {
+        int a = 10;
+        int b = 0; // 0으로 나누는 예외 발생 가능성 있음.
+        try {
+            // 언제 ? try 블록안에서 작업을 하나요?
+            // 네트워크 전송, 파일 입출력, 데이터베이스 연결 등, 이러한 작업을 더 많이함.
+            // 실행순서
+            // 정상인 경우 : 순서 1 -> 순서 2 -> 순서 4
+            // 예외 발생시 : 순서 1 -> 순서 3 -> 순서 4
+            int result = a / b; // 예외 발생 가능 코드, 순서1
+            System.out.println("결과: " + result);// 순서2,
+        } catch (ArithmeticException e) { // ArithmeticException 예외 처리
+            // 순서3
+            System.out.println("0으로 나눌 수 없습니다. 예외 메시지: " + e.getMessage());
+        } finally {
+            // 순서4
+            System.out.println("예외 처리 블록이 끝났습니다.");
+        }
     }
 
     // 기본 배열 생성, 조회, 반복문 출력, 배열 타입으로 리턴,
@@ -28,14 +59,27 @@ public class Exs_ch3 {
         }
     }
 
-    public static void ex3_7(Scanner scanner) {
-        // ex3-7, 퀴즈, 1~n 까지의 합을 구하는 메소드 작성하기.
+    // int[] : 리턴 타입 정수를 요소로 가지는 배열 타입.
+    // ex3_8_return : 메서드 이름 .
+    public static int[] ex3_8_return() {
+        // 배열을 리턴하는 예시
+        int[] numbers = { 1, 2, 3, 4, 5 }; // 배열 선언과 동시에 값 할당
+        return numbers; // 배열 리턴
+    }
 
-        int intArray[];
-        intArray = new int[5];
-        int max = 0; // 현재 가장 큰 수
+    public static void ex3_7(Scanner scanner) {
+        // ex3-7, 퀴즈, 양수 5개 받아서 배열 저장 후, 제일 큰 수 구하는 메소드 작성하기.
+        // 디버깅 하는 방법 에 대해서 이야기하기.
+        // 디버깅 모드에서, 각 단계로 들어가기, 다음 단계 등으로 실행 하면서
+        // 각 단계별 변수의 값 비교 및 확인.
+
+        // 확인시, 디버깅(검사), 순서도로 확인 해보기.
+        int[] intArray; // 정수형 배열 선언 만 하기.
+        intArray = new int[5]; // 크기 5인 정수형 배열 생성
+        int max = 0; // 현재 가장 큰 수, 상태 변수,
         System.out.println("양수 5개를 입력하세요.");
         for (int i = 0; i < 5; i++) {
+            // intArray = [1,2,3,4,5]; // 예시로 5개 입력 받음.
             intArray[i] = scanner.nextInt();
             // 입력 받은 정수를 배열에 저장
             if (intArray[i] > max)

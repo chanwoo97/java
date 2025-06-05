@@ -27,7 +27,6 @@ public class Mini_quiz2_Func {
 
     }
 
-
     // -- 퀴즈2,
     // -- 3x3 배열을 만들어 모든 요소에 1~9 채우고 출력
     public static void quiz2() {
@@ -81,15 +80,24 @@ public class Mini_quiz2_Func {
     // 임의로, 크기가 5개인, 문자열의 길이는 10개이하인, 랜덤한 문자열을 생성하는 메서드
     // 반환 타입 : 문자열 배열 ,
     public static String[] generateRandomStrings(int size) {
+        // size : 생성할 문자열의 개수
         String[] randomStrings = new String[size];
-        String characters = "abcdefghijklmnopqrstuvwxyz"; // 소문자 알파벳
+        String characters = "abcdefghijklmnopqrstuvwxyz"; // 소문자 알파벳,26
 
         for (int i = 0; i < size; i++) {
             int length = (int) (Math.random() * 10) + 1; // 1~10 사이의 길이
+            // StringBuilder: 문자열인데, 메모리 절약하는 문자열이다.
             StringBuilder sb = new StringBuilder();
 
             for (int j = 0; j < length; j++) {
-                int index = (int) (Math.random() * characters.length());
+                int index = (int) (Math.random() * characters.length()); // 0 ~ 25 사이의 랜덤 인덱스
+                // sb : 문자열 배열,
+                // charAt(0), 문자열의 인덱스에 해당하는 문자 가져오기
+                // characters.charAt(index) : 문자열 중에서, 길이가 26, 인덱스 치면, 0~25
+                // characters.charAt(0) -> 'a',
+                // characters.charAt(1) -> 'b',
+                // ..., characters.charAt(25) -> 'z'
+                // sb.append('a'); // 랜덤 문자 추가
                 sb.append(characters.charAt(index)); // 랜덤 문자 추가
             }
 

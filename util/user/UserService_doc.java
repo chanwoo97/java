@@ -11,7 +11,7 @@ public class UserService_doc {
     public static void registerUser(Scanner scanner) {
         // Scanner 객체를 매개변수로 받기,
         // 해결책 1, 각 메서드에서, 공용으로 사용을 할 스캐너를 받는 변수를 정의
-        System.out.println("이상용 홈피 회원가입");
+        System.out.println("정찬우 홈피 회원가입");
         // 순서1, Scanner 객체 생성
         // Scanner scanner = new Scanner(System.in);
 
@@ -73,7 +73,7 @@ public class UserService_doc {
     // 로그인 완료되었습니다. 현재 임시로 단순 출력용입니다. 조금 있다. 검증도 추가 해보기
     public static void loginUser(Scanner scanner) { //
         // 해결책 1, 각 메서드에서, 공용으로 사용을 할 스캐너를 받는 변수를 정의
-        System.out.println("이상용 홈피 로그인");
+        System.out.println("정찬우 홈피 로그인");
         // Scanner scanner = new Scanner(System.in); // 이슈 , 발생 ,
 
         String email = ""; // 이메일 변수 초기화
