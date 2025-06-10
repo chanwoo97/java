@@ -17,7 +17,7 @@ public class StaticEx4 {
 
     // 인스턴스 메서드
     // 인스턴스, (객체) 생성 후, 해당 인스턴스명으로 호출.
-    // A a = new A();
+    // A a = new A(); A = 생성자, 클래스명, a : 인스턴스명
     // a.showInfo()
     public void printInfo() {
         System.out.println("이름 : " + name);
