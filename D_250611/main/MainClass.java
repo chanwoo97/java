@@ -1,0 +1,12 @@
+package D_250611.main;
+
+import java.util.Scanner;
+
+import D_250611.ui.MemberUI;
+
+public class MainClass {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        MemberUI.drawUI(scanner);
+    }
+}

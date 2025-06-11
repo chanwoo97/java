@@ -13,24 +13,21 @@ public class WrapperMain_Ex1 {
         // 자바 -> 코틀린 언어, 모든 타입이 객체임. (물론 파이썬)
         // 자바스크립트 -> 리액트 문법 사용시, 타입 스크립트.
         // Integer [] ints = new Integer[3];
-        Integer [] ints = {intObj1};
+        Integer[] ints = { intObj1 };
         // ArrayList arrayList = new ArrayList<Integer>();
         // arrayList.add(intObj1);
         // arrayList.add(1); // 1 기본형 -> 참조형(Integer) 자동 박싱이 됨.
-    
-    
+
         // 문자열 -> 기본형 int
+        // Integer : 클래스명, parseInt : 메서드명, 정적 메서드 함
         int num1 = Integer.parseInt("12345");
 
         // Wrapper 객체 -> 기본형
         double d = Double.parseDouble("123.");
 
-        // 쵀대값, 최솟값 많이 활용함 
+        // 쵀대값, 최솟값 많이 활용함
         int num2 = Integer.MAX_VALUE;
         int num3 = Integer.MIN_VALUE;
-                                    
 
-
-    
     }
 }

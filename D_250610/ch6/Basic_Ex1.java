@@ -38,11 +38,11 @@ public class Basic_Ex1 {
     // float   |  Float
     // double  |  Double
     
-    // 예시
+    // 예시, 박싱
     // int num = 10;
     // 박싱, 기본형 -> 참조형(클래스타입)
     // Integer intObj = Integer.valueOf(10); -> 수동으로 변경.
-    // Integer intObj2 = num; -> 자동으로 변경.
+    // Integer intObj2 = num; -> 자동으로 형변환.
     
     // 예시2, 언박싱, 참조형 -> 기본형
     // Integer intObj = Integer.valueOf(10);

@@ -8,7 +8,7 @@ public class StringTokenizer_Ex {
     // 자주 사용하는 옵션
     // 1) hasMoreTokens() : 다음 토큰(문자)이 있는지 여부
     // 2) nextToken() : 다음 토큰(문자) 반환(꺼내기)
-    
+
     public static void main(String[] args) {
 
         StringTokenizer st = new StringTokenizer("사과, 배, 바나나, 포도", ", ");
