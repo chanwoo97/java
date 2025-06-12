@@ -1,6 +1,6 @@
 package D_250611.ch8_1;
 
-import D_250611.model.Member;
+import D_250611.member_project.model.Member;
 
 public class Generic_Ex2<T> {
     private T value;

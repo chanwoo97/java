@@ -1,8 +1,8 @@
-package D_250611.ui;
+package D_250611.member_project.ui;
 
 import java.util.Scanner;
-import D_250611.service.UserService_ArrayList_version;
-import D_250611.service.UserService_HashMap_version;
+import D_250611.member_project.service.UserService_ArrayList_version;
+import D_250611.member_project.service.UserService_HashMap_version;
 
 public class MemberUI {
     public static void drawUI(Scanner scanner) {

@@ -1,4 +1,4 @@
-package D_250611.util;
+package D_250612.member_project.util;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

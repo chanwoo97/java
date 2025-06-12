@@ -11,10 +11,12 @@ public class InputOutputStreamEx1 {
 
     // 주의사항
     // 1) 파일 입/출력, 의무적으로, 예외처리를 해야함. try ~ catch ~ finally
+    // 2) close() 자원 반납 해야 함.
 
     public static void main(String[] args) {
         // 키보드에서 한 글자를 입력받아 정수로 출력해보기.
         try {
+            // 키보드 입력 : a -> 유니코드 값 정수 : 97
             int data = System.in.read(); // 입력 받은 데이터를 변수에 담고
             System.out.println(data); // 담은 변수를 출력하는 과정
         } catch (Exception e) {

@@ -1,4 +1,4 @@
-package D_250611.model;
+package D_250611.member_project.model;
 
 public class Member {
 
