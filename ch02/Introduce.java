@@ -9,7 +9,7 @@ public class Introduce {
     
     public static String introduce_hobby(String food, String hobby, String game) {
         // String introduce2_myself = 제가 좋아하는 음식은 {음식이름} 입니다. 제 취미 : {취미}이고, 좋아하는 게임 : {게임명} 입니다.    
-        String introduce_hobby = "저가 좋아하는 음식은 " + food + " 입니다. 제 취미 : " + hobby + " 이고, 좋아하는 게임 : " + game + "입니다.";
+        String introduce_hobby = "제가 좋아하는 음식은 " + food + " 입니다. 제 취미 : " + hobby + " 이고, 좋아하는 게임 : " + game + "입니다.";
         return introduce_hobby;
     }
 
