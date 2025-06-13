@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 // 기본 문법 구조, 
 //  버튼.addActionListener(1)내부 클래스, 2) 익명 클래스 3) 화살표 함수) 
 //  버튼.addActionListener(e -> {이벤트 처리 구조}) 
-public class InnerClass_Anonymous_Lambda3 {
+public class _10InnerClass_Anonymous_Lambda3 {
     public static void main(String[] args) {
         JFrame frame = new JFrame("람다식 표현, 이벤트 처리 ");
         JButton button = new JButton("닫기");

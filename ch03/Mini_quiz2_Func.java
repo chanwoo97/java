@@ -107,3 +107,72 @@ public class Mini_quiz2_Func {
         return randomStrings; // 생성된 문자열 배열 반환
     }
 }
+
+
+/*
+quiz1(Scanner scanner)
+목적: 사용자로부터 정수 5개를 입력받아 배열에 저장하고 역순 출력
+
+주요 특징:
+
+int[] numbers = new int[5] 생성
+
+scanner.nextInt()로 5개 입력
+
+마지막 인덱스부터 0까지 역순 출력
+
+사용법: 콘솔에서 숫자 5개 연속 입력 (공백 또는 줄바꿈 구분)
+
+quiz2()
+목적: 3x3 2차원 배열에 1부터 9까지 숫자를 순서대로 채우고 출력
+
+주요 특징:
+
+int[][] array = new int[3][3] 생성
+
+이중 for문으로 값 1~9 할당
+
+행별로 출력해서 3x3 형태 확인 가능
+
+결과 예시:
+
+복사
+편집
+1 2 3 
+4 5 6 
+7 8 9 
+quiz3(String[] strings)
+목적: 문자열 배열에서 가장 긴 문자열 반환
+
+주요 특징:
+
+배열이 비었거나 null일 경우 null 반환
+
+첫 문자열을 초기 longest로 지정
+
+enhanced for문으로 각 문자열 길이 비교 후 갱신
+
+예시: {"apple", "banana", "cherry", "date"} → "banana" 반환
+
+generateRandomStrings(int size)
+목적: 크기가 size인 문자열 배열 생성, 각 문자열은 1~10 글자 길이의 랜덤 소문자 문자열
+
+주요 특징:
+
+StringBuilder 사용해 문자 하나씩 붙임
+
+Math.random() 이용해 길이와 문자 인덱스 랜덤 선택
+
+결과는 길이 다양한 무작위 소문자 문자열 배열
+
+예시: size=5 → ["hjdks", "a", "wqplmno", "xyz", "klp"] 같은 배열 반환
+
+개선/확장 제안
+quiz1에서 사용자 입력이 정수가 아닐 경우 예외처리 추가 가능
+
+generateRandomStrings 에서 대문자나 숫자 포함하도록 확장 가능
+
+quiz3가 가장 긴 문자열이 여러 개일 때 첫 번째만 반환하는 점 참고
+
+
+*/

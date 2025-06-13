@@ -34,3 +34,49 @@ public class Mini_quiz2_Main {
 
     }
 }
+
+/*
+1. 클래스명.메서드() 형태의 의미
+자바에서 static 메서드는 객체 생성 없이 클래스 이름으로 직접 호출할 수 있습니다.
+
+예) Mini_quiz2_Func.quiz3(strings)
+
+여기서 Mini_quiz2_Func는 클래스명, quiz3는 그 클래스 안에 있는 static 메서드 이름이에요.
+
+즉,
+
+java
+복사
+편집
+String longestString = Mini_quiz2_Func.quiz3(strings);
+는
+
+Mini_quiz2_Func 클래스 내부의 quiz3 메서드를 호출하는 코드이고,
+
+strings 배열을 인자로 넘겨서 가장 긴 문자열을 받아서 longestString 변수에 저장하는 겁니다.
+
+2. 디버깅 단축키 간단 요약
+중단점 찍기: 코드 왼쪽 여백 클릭 → 빨간 점
+
+디버깅 시작: F5
+
+한 줄씩 실행 (Step Over): F10
+
+메서드 내부로 진입 (Step Into): F11
+
+메서드 내부 실행 빠져 나오기 (Step Out): Shift + F11
+
+3. 왜 디버깅을 하냐?
+프로그램 실행 흐름을 한 줄씩 보면서 변수 상태 확인
+
+내가 호출한 메서드가 실제로 어떻게 작동하는지 이해
+
+버그나 오류를 잡기 위해
+
+4. Main 메서드에서 해야 할 일 정리
+디버깅을 해보고 싶다면 Mini_quiz2_Func 클래스의 특정 메서드(예: quiz1, quiz2, quiz3) 호출 라인에 중단점 찍고 실행해보세요
+
+scanner.close()는 입력 종료
+
+quiz3 메서드 호출 후 결과 출력 코드 잘 작성됨
+*/

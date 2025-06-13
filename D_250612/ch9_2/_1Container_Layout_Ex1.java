@@ -12,6 +12,8 @@ import javax.swing.JPanel;
 // 배치관리자 (LayoutManager)
 // 정렬을 어떻게 하냐? 웹 : flex -> 자동으로 나란히 배치, grid -> 행 x 열 (테이블구조)
 // 종류 : FlowLayout(flex비슷), BorderLayout(동서남북중앙), GridLayout(Grid와 비슷, 행x열)
+// JFrame -> 기본 배치관리자, BorderLayout
+// JPanel -> 기본 배치관리자 : FlowLayout
 
 // 기본 문법
 // 1) 패널 만들기

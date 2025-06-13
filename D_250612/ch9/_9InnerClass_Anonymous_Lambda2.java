@@ -34,7 +34,7 @@ import java.awt.event.ActionEvent;
 // 이벤트 처리 구조, 메서드 구현
 // }
 
-public class InnerClass_Anonymous_Lambda2 {
+public class _9InnerClass_Anonymous_Lambda2 {
     public static void main(String[] args) {
         JFrame frame = new JFrame("익명 클래스 예시");
         JButton button = new JButton("닫기");
