@@ -61,6 +61,11 @@ public class _4SignupFrame extends JFrame {
 
         // 추가
         service.setTableModel(tableModel);
+        // 코드 분리를 하면서, 기능, 화면을 따로 분리, 자바 특성상, 클래스 그림을 그리기 위해서
+        // JFrame 필요함. 다이얼로그 알림창 이용을 하려면, 4번의 인스턴스를 서비스 클래스에 포함해서
+        // 이용함 -> 단, 억지로 화면을 나타내기 위해서 구현을 했지만, 추천하는 형태는 아님.
+        // 나중에는 정확히 화면, 기능을 명확히 분리를 할 예정. 지금 단순 구현 위주로 진행을 했음.
+        service.setSignupFrame(this);
 
         // 표 형태의 데이터를 ,-> 화면 출력용 테이블에 데이터 연결.
         memberTable = new JTable(tableModel);
@@ -150,6 +155,9 @@ public class _4SignupFrame extends JFrame {
     // =================================================================
     // 추가4
     // 각 기능들 정의,
+    public void showDialog(String msg) {
+        JOptionPane.showMessageDialog(this, msg);
+    }
 
     // 6) 회원 가입 입력 품, 다이얼 로그 창으로 작업, 자바버전으로
     private void showAddDialog() {
@@ -202,6 +210,7 @@ public class _4SignupFrame extends JFrame {
             Member member = new Member(name, password, email, regDate);
             // members.add(member);
             service.addMember(member);
+            JOptionPane.showMessageDialog(this, "회원 가입 되었습니다.");
             service.saveMembersToFile();
             // 변경사항 새로고침, 즉 다 지우고, 전체 회원을 다시 그리기.
             service.refreshTable();
