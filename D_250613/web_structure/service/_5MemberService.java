@@ -87,7 +87,7 @@ public class _5MemberService {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(FILE_NAME), "UTF-8"))) {
             String line;
             while ((line = br.readLine()) != null) { // 파일의 내용을 다 읽을때 까지 반복
-                Member member = Member.fromCSV(line); 
+                Member member = Member.fromCSV(line);
                 if (member != null) {
                     members.add(member);
                 }

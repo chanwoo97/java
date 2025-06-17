@@ -50,7 +50,7 @@ public class _5JDBC_Update {
             // 주의사항, 세미콜론을 입력하지 않는다.
             // 예) String query = "select sysdate from dual"
             // insert into member501 (id, name, password, email,reg_date)
-            // values ( member501_seq.nextval,'이상용','1234','lsy@naver.com','2025년6월16일12시9분'
+            // values ( member501_seq.nextval,'정찬우','1234','jcw@naver.com','2025년6월16일12시9분'
             // );
             // String query = "INSERT INTO MEMBER501 (ID,NAME,PASSWORD,EMAIL,REG_DATE)" +
             // "VALUES(?,?,?,?,?)";
@@ -73,23 +73,23 @@ public class _5JDBC_Update {
 
             // 직접 ID 수동으로 넣을 경우,
             // pstmt.setInt(1, 100);
-            // pstmt.setString(2, "이상용");
+            // pstmt.setString(2, "정찬우");
             // pstmt.setString(3, "1234");
-            // pstmt.setString(4, "lsy@naver.com");
+            // pstmt.setString(4, "jcw@naver.com");
             // String date = DateUtil.getCurrentDateTime();
             // System.out.println(date);
             // pstmt.setString(5, date);
 
             // 시퀀스 이용해서, 자동 순번으로 넣을 경우.
-            // pstmt.setString(1, "이상용");
+            // pstmt.setString(1, "정찬우");
             // pstmt.setString(2, "1234");
-            // pstmt.setString(3, "lsy@naver.com");
+            // pstmt.setString(3, "jcw@naver.com");
             // pstmt.setString(4, DateUtil.getCurrentDateTime());
 
             // 수정 할 내용
-            pstmt.setString(1, "이상용 수정");
+            pstmt.setString(1, "정찬우 수정");
             pstmt.setString(2, "1234 수정");
-            pstmt.setString(3, "lsy@naver.com 수정");
+            pstmt.setString(3, "jcw@naver.com 수정");
             pstmt.setString(4, DateUtil.getCurrentDateTime());
             pstmt.setInt(5, 1);
             System.out.println("5. PreparedStatement 생성 완료");

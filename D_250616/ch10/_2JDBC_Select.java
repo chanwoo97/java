@@ -106,7 +106,7 @@ public class _2JDBC_Select {
             }
 
             // 쓰기 버전,
-            // int result = executeUpdate(query)
+            // int result = executeUpdate()
         } catch (Exception e) {
             // TODO: handle exception
         } finally {

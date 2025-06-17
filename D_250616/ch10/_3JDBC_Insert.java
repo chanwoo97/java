@@ -61,17 +61,17 @@ public class _3JDBC_Insert {
 
             // 직접 ID 수동으로 넣을 경우,
             // pstmt.setInt(1, 100);
-            // pstmt.setString(2, "이상용");
+            // pstmt.setString(2, "정찬우");
             // pstmt.setString(3, "1234");
-            // pstmt.setString(4, "lsy@naver.com");
+            // pstmt.setString(4, "jcw@naver.com");
             // String date = DateUtil.getCurrentDateTime();
             // System.out.println(date);
             // pstmt.setString(5, date);
 
             // 시퀀스 이용해서, 자동 순번으로 넣을 경우.
-            pstmt.setString(1, "이상용");
+            pstmt.setString(1, "정찬우");
             pstmt.setString(2, "1234");
-            pstmt.setString(3, "lsy@naver.com");
+            pstmt.setString(3, "jcw@naver.com");
             pstmt.setString(4, DateUtil.getCurrentDateTime());
             System.out.println("5. PreparedStatement 생성 완료");
 
